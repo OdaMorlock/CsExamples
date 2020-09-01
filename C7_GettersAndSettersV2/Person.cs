@@ -2,20 +2,34 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C6__GettersAndSetters
+namespace C7_GettersAndSettersV2
 {
     class Person
     {
 
-        public string Name { get;private set; }
+        public string Name { get; private set; }
 
-        public int Age => CalculateAge();
+       
+        public int Age
+        {
+            get 
+            {
+                int _age = DateTime.Now.Year - DateOfBirth.Year;
+                if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
+                {
+                    _age = _age - 1;
+                }
+                return _age;
+            }
+         
+        }
+
 
         public string City { get; set; }
 
         public DateTime DateOfBirth { get; set; }
 
-        
+
 
 
         public void AskForName()
@@ -48,53 +62,53 @@ namespace C6__GettersAndSetters
 
         }
 
-      /*  public void AskForAge()
-        {
+        /*  public void AskForAge()
+          {
 
-            Console.Write($"AND HOW FEW YEARS HAVE YOU`R EXISTENS BEEN {Name}?");
+              Console.Write($"AND HOW FEW YEARS HAVE YOU`R EXISTENS BEEN {Name}?");
 
-            try
-            {
+              try
+              {
 
-                Age = Convert.ToInt32(Console.ReadLine());
+                  Age = Convert.ToInt32(Console.ReadLine());
 
-            }
+              }
 
-            catch
-            {
+              catch
+              {
 
-                Console.WriteLine("ARE YOU EVEN UNCAPABLE OF TELLING YOUR LIFE IN DIGIT FORMAT?? DONT WORRY YOU WILL GET ONE! MORE CHANCE BETTER GET IT ");
-                Age = Convert.ToInt32(Console.ReadLine());
+                  Console.WriteLine("ARE YOU EVEN UNCAPABLE OF TELLING YOUR LIFE IN DIGIT FORMAT?? DONT WORRY YOU WILL GET ONE! MORE CHANCE BETTER GET IT ");
+                  Age = Convert.ToInt32(Console.ReadLine());
 
-                try
-                {
+                  try
+                  {
 
-                    Age = Convert.ToInt32(Console.ReadLine());
+                      Age = Convert.ToInt32(Console.ReadLine());
 
-                }
-                catch
-                {
+                  }
+                  catch
+                  {
 
-                    Console.WriteLine("GOD YOU´R STUPIDITY IS HURTING MY BRAIN!!!");
+                      Console.WriteLine("GOD YOU´R STUPIDITY IS HURTING MY BRAIN!!!");
 
-                }
+                  }
 
-            }
+              }
 
-            finally
-            {
-                Console.WriteLine($"YOU´VE MERELY BEEN AROUND FOR {Age} YEARS AND YOU DARE TOO APPROACH ME!?!! ");
-
-
-            }
+              finally
+              {
+                  Console.WriteLine($"YOU´VE MERELY BEEN AROUND FOR {Age} YEARS AND YOU DARE TOO APPROACH ME!?!! ");
 
 
+              }
 
-        } */
+
+
+          } */
 
         public void AskForDateOfBirth()
         {
-            Console.Write("When Were You Born? "  );
+            Console.Write("When Were You Born? ");
             try
             {
                 DateOfBirth = Convert.ToDateTime(Console.ReadLine());
@@ -120,15 +134,7 @@ namespace C6__GettersAndSetters
 
         }
 
-        private int CalculateAge()
-        {
-           int _age = DateTime.Now.Year - DateOfBirth.Year;
-            if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
-            {
-                _age = _age - 1;
-            }
-            return _age;
-        }
+
 
     }
 }
