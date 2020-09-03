@@ -132,7 +132,57 @@ namespace AnTeckningar
              * siblings.RemoveAt(index); / tar bort det at index
              * siblings.Insert(0,_oldest); / lägger till Oldest i plats 0( första)
              * 
+             * () efter int local () gör det till en funskion
              * 
+             * MINNESHANTERING (RAM-HHD)
+             * HEAP (Större utryme)      =  Långsamare MALOC()/FREE()     MALOC() Reservera minnes palts     /FREE() Tabort,Frigör   Class Går på HEAP
+             * STACK      =  Snabbare       STRUCT går på STACK  Variabler hamnar på STACK:en              stack overflow Skapar för mycket minne i Stack overflow STRUCT används inte dirket 
+             *  
+             *  
+             *  
+             *   int Nr1 = 1                 Global
+             *   int Nr2 = 1                 Global
+             *   
+             *   fucktion
+             *   {
+             *   
+             *   Nr1(Copy) = 2                   Local
+             *   Nr2(Copy) = 2   
+             *   
+             *   int Nr3 = 1                     Local
+             *   
+             *   }
+             *   
+             *   Nr1 Tar det Globala Värde 1
+             *   Nr2 Tar det Globala Värde 1
+             *   
+             *   
+             *   
+             *   
+             *   int Nr1 = 1                 Global
+             *   int Nr2 = 1                 Global
+             *   
+             *   Class
+             *   {
+             *   
+             *   Nr1 = 2                   Global
+             *   Nr2 = 2                   Global
+             *   
+             *   int Nr3 = 1                     Global
+             *   
+             *   }
+             *   
+             *   Nr1 Tar det Globala Värde 1
+             *   Nr2 Tar det Globala Värde 1
+             *   
+             *   
+             *   Enum   =   Konstanta värde som aldrig ändras under programmets gång 
+             *   
+             *   
+             *   
+             * (Viktigt)  Interface  =   
+             *   
+             *  
              */
         }
     }

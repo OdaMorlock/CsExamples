@@ -9,7 +9,9 @@ namespace C7_GettersAndSettersV2
             var person = new Person();
 
 
-            person.AskForDateOfBirth();
+            person.AskForName();
+
+            
         }
     }
 }

@@ -15,13 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C5_WithAgeCalc", "C5_WithAg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C6_ GettersAndSetters", "C6_ GettersAndSetters\C6_ GettersAndSetters.csproj", "{B3D654B6-8666-4984-9A18-849223AD5C7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C7_GettersAndSettersV2", "C7_GettersAndSettersV2\C7_GettersAndSettersV2.csproj", "{7B8B1361-ED4F-4FF6-832E-D3B89810B73B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C7_GettersAndSettersV2", "C7_GettersAndSettersV2\C7_GettersAndSettersV2.csproj", "{7B8B1361-ED4F-4FF6-832E-D3B89810B73B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C8_Arrys", "C8_Arrys\C8_Arrys.csproj", "{9C837EB9-A088-4A6D-9FA6-66E364DA5543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C8_Arrys", "C8_Arrys\C8_Arrys.csproj", "{9C837EB9-A088-4A6D-9FA6-66E364DA5543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnTeckningar", "AnTeckningar\AnTeckningar.csproj", "{5D0F3965-F6D8-4ECF-B4F7-CF02FD5D2EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnTeckningar", "AnTeckningar\AnTeckningar.csproj", "{5D0F3965-F6D8-4ECF-B4F7-CF02FD5D2EE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C9_Lists", "C9_Listor\C9_Lists.csproj", "{C555C8B9-8D1B-4E75-AA3A-6BB20310731D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C9_Lists", "C9_Listor\C9_Lists.csproj", "{C555C8B9-8D1B-4E75-AA3A-6BB20310731D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C10_Struct", "C10_Struct\C10_Struct.csproj", "{4BC4A0EF-02F1-4ABC-B50B-5923C775AF8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C11_Enum", "C11_Enum\C11_Enum.csproj", "{60B11759-4193-471E-A915-A09069904AB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C12_Interfaces_1", "C12_Interfaces_1\C12_Interfaces_1.csproj", "{8AFF7202-84FA-4107-B51E-1BD8358BC334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,18 @@ Global
 		{C555C8B9-8D1B-4E75-AA3A-6BB20310731D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C555C8B9-8D1B-4E75-AA3A-6BB20310731D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C555C8B9-8D1B-4E75-AA3A-6BB20310731D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC4A0EF-02F1-4ABC-B50B-5923C775AF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC4A0EF-02F1-4ABC-B50B-5923C775AF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC4A0EF-02F1-4ABC-B50B-5923C775AF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC4A0EF-02F1-4ABC-B50B-5923C775AF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B11759-4193-471E-A915-A09069904AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B11759-4193-471E-A915-A09069904AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B11759-4193-471E-A915-A09069904AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B11759-4193-471E-A915-A09069904AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFF7202-84FA-4107-B51E-1BD8358BC334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFF7202-84FA-4107-B51E-1BD8358BC334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFF7202-84FA-4107-B51E-1BD8358BC334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFF7202-84FA-4107-B51E-1BD8358BC334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
