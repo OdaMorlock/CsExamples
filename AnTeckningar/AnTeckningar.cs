@@ -180,7 +180,19 @@ namespace AnTeckningar
              *   
              *   
              *   
-             * (Viktigt)  Interface  =   
+             * (Viktigt)  Interface  =   Kontrakt, En vis sak ska innehålla visa saker .  Condition, Vissa saker måste finnas med och ha vissa betydelser  
+             * 
+             * Kontrakt säger att  en Maskin måste ha en start och stop funktion 
+             * 
+             *  Tex 
+             *  När du trycker på Grön Start knapp ska Maskinen starta
+             *  När du trycker på Röd Stopp Knapp ska maskninen stoppa 
+             *  
+             *  Class BandSaw : IMachine Select IMachine and Press CTRL + . så får man förslag 
+             *  
+             *  Enum flyttas inte med ifrån en Interface 
+             *  Interface  = Mal 
+             *  
              *   
              *  
              */
